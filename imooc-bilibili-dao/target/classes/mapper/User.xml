@@ -36,7 +36,6 @@
         userId,
         nick,
         avatar,
-        sign,
         gender,
         birth,
         createTime
@@ -44,7 +43,6 @@
         #{userId},
         #{nick},
         #{avatar},
-        #{sign},
         #{gender},
         #{birth},
         #{createTime}
@@ -190,14 +188,14 @@
         )
     </insert>
 
-    <select id="getRefreshTokenDetail" parameterType="java.lang.String" resultType="com.imooc.bilibili.domain.RefreshTokenDetail">
-        select
-        *
-        from
-        t_refresh_token
-        where
-        refreshToken = #{refreshToken}
-    </select>
+<!--    <select id="getRefreshTokenDetail" parameterType="java.lang.String" resultType="com.imooc.bilibili.domain.RefreshTokenDetail">-->
+<!--        select-->
+<!--        *-->
+<!--        from-->
+<!--        t_refresh_token-->
+<!--        where-->
+<!--        refreshToken = #{refreshToken}-->
+<!--    </select>-->
 
     <select id="getRefreshTokenByUserId" parameterType="java.lang.Long" resultType="java.lang.String">
         select

@@ -15,6 +15,7 @@ public class UserSupport {
             if (userId < 0){
                 throw new ConditionExppection("非法用户!");
             }
+            return userId;
       }
 
 

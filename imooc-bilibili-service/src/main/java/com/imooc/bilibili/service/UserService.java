@@ -2,7 +2,6 @@ package com.imooc.bilibili.service;
 
 import com.imooc.bilibili.constant.UserConstant;
 import com.imooc.bilibili.dao.UserDao;
-import com.imooc.bilibili.domain.JsonResponse;
 import com.imooc.bilibili.domain.User;
 import com.imooc.bilibili.domain.UserInfo;
 import com.imooc.bilibili.exception.ConditionExppection;
@@ -10,10 +9,8 @@ import com.imooc.bilibili.util.MD5Util;
 import com.imooc.bilibili.util.RSAUtil;
 import com.imooc.bilibili.util.TokenUtil;
 import com.mysql.cj.util.StringUtils;
-import com.sun.org.apache.bcel.internal.generic.IF_ACMPEQ;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.Date;
 
@@ -83,6 +80,7 @@ public class UserService {
     }
 
     public User getUserInfo(Long userId) {
-        userDao.getUserById(userId);
+        User userById = userDao.getUserById(userId);
+        return userById;
     }
 }
