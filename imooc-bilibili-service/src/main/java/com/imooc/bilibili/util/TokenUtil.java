@@ -21,9 +21,8 @@ public class TokenUtil {
         calendar.add(Calendar.SECOND, 30);
         return JWT.create().withKeyId(String.valueOf(userid)).withIssuer(ISSUER).withExpiresAt(calendar.getTime()).sign(algorithm);
     }
-    public static Long verifuToken(String token) {
+    public static Long verifyToken(String token) {
         try {
-
             Algorithm algorithm = Algorithm.RSA256(RSAUtil.getPublicKey(),RSAUtil.getPrivateKey());
             JWTVerifier verifier = JWT.require(algorithm).build();
             DecodedJWT jwt = verifier.verify(token);

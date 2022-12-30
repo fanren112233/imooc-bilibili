@@ -4,27 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ef772b5-e313-41d8-b44a-69b097a74dde" name="变更" comment="committest">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="3ef772b5-e313-41d8-b44a-69b097a74dde" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/FollowingGroupDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/UserFollowingDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/FollowingGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/UserFollowing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/resources/mapper/followingGroup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/service/FollowingGroupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/service/UserFollowingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imooc-bilibili-api/src/main/java/com/imooc/bilibili/api/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-api/src/main/java/com/imooc/bilibili/api/UserApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imooc-bilibili-api/src/main/java/com/imooc/bilibili/api/support/UserSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-api/src/main/java/com/imooc/bilibili/api/support/UserSupport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-api/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/resources/mapper/User.xml" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/resources/mapper/User.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/target/classes/mapper/User.xml" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/target/classes/mapper/User.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/target/imooc-bilibili-dao-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-service/target/imooc-bilibili-service-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-service/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/util/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/util/TokenUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +148,9 @@
       <workItem from="1669017410897" duration="434000" />
       <workItem from="1669017849726" duration="12762000" />
       <workItem from="1669039465485" duration="2000" />
-      <workItem from="1672345112842" duration="1807000" />
+      <workItem from="1672345112842" duration="8466000" />
+      <workItem from="1672399619862" duration="1219000" />
+      <workItem from="1672427912801" duration="3405000" />
     </task>
     <task id="LOCAL-00001" summary="jwt finish">
       <created>1669015666277</created>
@@ -191,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669018166320</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="committest">
+      <created>1672346963484</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672346963485</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,20 +216,6 @@
     <MESSAGE value="push test" />
     <MESSAGE value="committest" />
     <option name="LAST_COMMIT_MESSAGE" value="committest" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/UserDao.java</url>
-          <line>10</line>
-          <properties class="com.imooc.bilibili.dao.UserDao" method="getUserByPhone">
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

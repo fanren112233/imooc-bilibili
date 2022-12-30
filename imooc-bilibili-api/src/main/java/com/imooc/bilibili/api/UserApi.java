@@ -3,6 +3,7 @@ package com.imooc.bilibili.api;
 import com.imooc.bilibili.api.support.UserSupport;
 import com.imooc.bilibili.domain.JsonResponse;
 import com.imooc.bilibili.domain.User;
+import com.imooc.bilibili.domain.UserInfo;
 import com.imooc.bilibili.service.UserService;
 import com.imooc.bilibili.util.RSAUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,6 +38,14 @@ public class UserApi {
     @PostMapping("/users")
     public JsonResponse<String> addUser(@RequestBody User user){
         userService.addUser(user);
+        return JsonResponse.success();
+    }
+
+    @PostMapping("/user-infos")
+    public JsonResponse<String> updateUserInfos(@RequestBody UserInfo userInfo){
+        Long userId = userSupport.getCurrentUserId();
+        userInfo.setUserId(userId);
+        userService.updateUserInfos(userInfo);
         return JsonResponse.success();
     }
 }

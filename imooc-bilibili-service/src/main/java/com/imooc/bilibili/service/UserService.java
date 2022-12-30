@@ -83,4 +83,10 @@ public class UserService {
         User userById = userDao.getUserById(userId);
         return userById;
     }
+
+    public void updateUserInfos(UserInfo userInfo) {
+        userInfo.setUpdateTime(new Date());
+        userDao.updateUserInfos(userInfo);
+
+    }
 }
