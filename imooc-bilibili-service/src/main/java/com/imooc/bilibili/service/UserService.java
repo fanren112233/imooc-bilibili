@@ -1,8 +1,11 @@
 package com.imooc.bilibili.service;
 
+import com.alibaba.fastjson.JSONObject;
 import com.imooc.bilibili.constant.UserConstant;
 import com.imooc.bilibili.dao.UserDao;
+import com.imooc.bilibili.domain.PageResult;
 import com.imooc.bilibili.domain.User;
+import com.imooc.bilibili.domain.UserFollowing;
 import com.imooc.bilibili.domain.UserInfo;
 import com.imooc.bilibili.exception.ConditionExppection;
 import com.imooc.bilibili.util.MD5Util;
@@ -12,7 +15,10 @@ import com.mysql.cj.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.Set;
 
 @Service
 public class UserService {
@@ -89,4 +95,28 @@ public class UserService {
         userDao.updateUserInfos(userInfo);
 
     }
+
+    public User getUserById(Long followingId) {
+        return userDao.getUserById(followingId);
+    }
+
+    public List<UserInfo> getUserInfoByUserIds(Set<Long> collect) {
+        userDao.getUserInfoByUserIds();
+
+        return null;
+    }
+
+    public PageResult<UserInfo> pageListUserInfos(JSONObject params) {
+        Integer no = params.getInteger("no");
+        Integer size = params.getInteger("size");
+        params.put("star",(no - 1) * size);
+        params.put("limit",size);
+        Integer total = userDao.pageCountUserInfos(params);
+        List<UserInfo> userInfoList = new ArrayList<>();
+        if (total > 0){
+            userInfoList = userDao.pageListUserInfos(params);
+        }
+        return new PageResult<>(total,userInfoList);
+    }
+
 }

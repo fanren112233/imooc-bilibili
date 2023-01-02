@@ -6,9 +6,15 @@
 
     <select id="getByType" parameterType="java.lang.String" resultType="com.imooc.bilibili.domain.FollowingGroup">
         select
-            *
+        *
         from t_following_group
-        where 'type' = #{type}
+        where type = #{type}
     </select>
 
+    <select id="getByUserId" parameterMap="java.lang.Long" resultType="com.imooc.bilibili.domain.FollowingGroup">
+        select *
+        from t_following_group
+        where userId = #{userId} or type in ('0','1','2')
+
+    </select>
 </mapper>

@@ -5,20 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ef772b5-e313-41d8-b44a-69b097a74dde" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/FollowingGroupDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/UserFollowingDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/FollowingGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/UserFollowing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/resources/mapper/followingGroup.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/service/FollowingGroupService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/service/UserFollowingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-bilibili-api/src/main/java/com/imooc/bilibili/api/UserFollowingApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/resources/mapper/UserFollowing.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/config/RocketMQConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imooc-bilibili-api/src/main/java/com/imooc/bilibili/api/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-api/src/main/java/com/imooc/bilibili/api/UserApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-api/src/main/java/com/imooc/bilibili/api/support/UserSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-api/src/main/java/com/imooc/bilibili/api/support/UserSupport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/FollowingGroupDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/FollowingGroupDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/UserFollowingDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/dao/UserFollowingDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/FollowingGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/FollowingGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/UserFollowing.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/UserFollowing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/domain/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/resources/mapper/followingGroup.xml" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/resources/mapper/followingGroup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/constant/UserConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-dao/src/main/java/com/imooc/bilibili/constant/UserConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/service/FollowingGroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/service/FollowingGroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/service/UserFollowingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/service/UserFollowingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/util/TokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/imooc-bilibili-service/src/main/java/com/imooc/bilibili/util/TokenUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +78,7 @@
     &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reactor&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;my.smart.mybatis.project.setting.config&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;746e24775a2be7ec6e04b67cff102009&quot;,
     &quot;zielu.gittoolbox.prj.config.selected.tab.id&quot;: &quot;zielu.gittoolbox.config.shared.autoFetch&quot;
   },
@@ -91,6 +95,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\MI\Desktop\imooc-bilibili\imooc-bilibili-dao\src\main\java" />
       <recent name="C:\Users\MI\Desktop\imooc-bilibili\imooc-bilibili-service\src\main\java\com\imooc\bilibili\service\util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MI\Desktop\imooc-bilibili\imooc-bilibili-dao\src\main\resources\mapper" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ImoocBilibiliApp">
@@ -150,7 +157,9 @@
       <workItem from="1669039465485" duration="2000" />
       <workItem from="1672345112842" duration="8466000" />
       <workItem from="1672399619862" duration="1219000" />
-      <workItem from="1672427912801" duration="3405000" />
+      <workItem from="1672427912801" duration="9299000" />
+      <workItem from="1672514523280" duration="8747000" />
+      <workItem from="1672584952385" duration="16819000" />
     </task>
     <task id="LOCAL-00001" summary="jwt finish">
       <created>1669015666277</created>
@@ -194,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672346963485</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="committest">
+      <created>1672433895697</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672433895697</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

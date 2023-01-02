@@ -1,10 +1,14 @@
 package com.imooc.bilibili.domain;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+
 import java.util.Date;
 import java.util.List;
 
 public class FollowingGroup {
 
+    @TableId(type = IdType.AUTO)
     private Long id;
 
     private Long userId;
@@ -16,8 +20,8 @@ public class FollowingGroup {
     private Date createTime;
 
     private Date updateTime;
-//
-//    private List<UserInfo> followingUserInfoList;
+
+    private List<UserInfo> followingUserInfoList;
 
     public Long getId() {
         return id;
@@ -67,11 +71,11 @@ public class FollowingGroup {
         this.updateTime = updateTime;
     }
 
-//    public List<UserInfo> getFollowingUserInfoList() {
-//        return followingUserInfoList;
-//    }
-//
-//    public void setFollowingUserInfoList(List<UserInfo> followingUserInfoList) {
-//        this.followingUserInfoList = followingUserInfoList;
-//    }
+    public List<UserInfo> getFollowingUserInfoList() {
+        return followingUserInfoList;
+    }
+
+    public void setFollowingUserInfoList(List<UserInfo> followingUserInfoList) {
+        this.followingUserInfoList = followingUserInfoList;
+    }
 }
